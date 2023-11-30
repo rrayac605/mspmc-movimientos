@@ -1,0 +1,7 @@
+spring:
+  application:    
+    name: mspmc-movimientos
+info: 
+  component: Microservicio de Movimientos PMC    
+    
+    
