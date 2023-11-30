@@ -1,0 +1,27 @@
+server:
+    port: ${portMSMovimientos}
+                     
+logging:
+  #file: ${PATH_LOGS}/${spring.application.name}.log
+  file: ${fileLogMsMovimientos}
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: INFO
+    mx.gob.imss.cit.tooad: DEBUG
+    com.netflix: WARN
+    
+    
+spring:
+  data:
+    mongodb:
+      authentication-database: ${authenticationdatabaseMongo}
+      username: ${usrMongoCambios} 
+      password: ${pwdMongoCambios}
+      database: ${databaseMongo}
+      port: ${portMongo}
+      host: ${hostMongo}
+  application:
+   name: mspmc-movimientos
+
